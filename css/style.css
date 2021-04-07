@@ -3,8 +3,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: Mulish;
+  font-style: regular;
+  font-weight: 400;
+  src: url(/fonts/Mulish-Regular.ttf);
+}
+@font-face {
+  font-family: Mulish;
+  font-style: bold;
+  font-weight: 700;
+  src: url(/fonts/Mulish-Bold.ttf);
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+h2 {
+  font-weight: 700;
 }
 .header {
   display: flex;
@@ -13,6 +31,7 @@ body {
   padding-bottom: 20px;
   padding-left: 32px;
   padding-right: 70px;
+  margin-bottom: 30px;
 }
 .menu-btn_ham {
   padding: 0;
@@ -55,6 +74,7 @@ body {
   padding-bottom: 12px;
   padding-left: 23px;
   padding-right: 23px;
+  width: 100%;
 }
 .btn-search {
   padding: 0;
@@ -91,4 +111,42 @@ body {
 }
 .user {
   margin-left: 25px;
+}
+.sidebar {
+  padding-left: 32px;
+}
+.container {
+  max-width: 160px;
+}
+.nav-menu {
+  margin-top: 0;
+  margin-bottom: 60px;
+  padding-left: 0;
+}
+.nav-item {
+  list-style: none;
+  margin-bottom: 28px;
+  fill: #898989;
+}
+.nav-text {
+  margin-left: 13px;
+}
+.nav-link {
+  color: #898989;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.nav-link:hover {
+  color: #ff0000;
+}
+.nav-link:hover .icon-menu {
+  fill: #ff0000;
+}
+.nav-title {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
+  margin-bottom: 30px;
 }
